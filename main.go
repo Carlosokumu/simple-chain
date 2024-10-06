@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/carlos/simple-chain/chain"
+	"simple-chain/chain"
 )
 
 func main() {
@@ -11,7 +11,7 @@ func main() {
 	// create a new blockchain instance with a mining difficulty of 5
 	blockchain := chain.CreateBlockchain(5)
 
-	// record transactions on the blockchain for Alice, Bob, and John
+	// record transactions on the blockchain
 	blockchain.AddBlock("Carlos", "Reiz", 10)
 	blockchain.AddBlock("Leo", "Juli", 5)
 
